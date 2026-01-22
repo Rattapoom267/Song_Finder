@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Finder - ค้นหาเพลง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ส่วนหัวของเว็บ -->
+    <header>
+        <h1>🎵 Song Finder</h1>
+        <p>ค้นหาเพลงและศิลปินที่คุณชื่นชอบ</p>
+    </header>
+
+    <!-- ส่วนหลักของเว็บ -->
+    <main class="container">
+        <!-- ส่วนค้นหา -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="พิมพ์ชื่อเพลงหรือศิลปิน..."
+                autocomplete="off"
+            >
+            <button id="searchBtn">🔍 ค้นหา</button>
+        </div>
+
+        <!-- ข้อความแสดงสถานะ -->
+        <div id="message" class="message"></div>
+
+        <!-- แสดงตัวโหลด -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>กำลังค้นหา...</p>
+        </div>
+
+        <!-- ส่วนแสดงผลลัพธ์ -->
+        <div id="results" class="results-grid"></div>
+    </main>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
